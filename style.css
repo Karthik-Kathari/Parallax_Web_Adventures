@@ -3,9 +3,14 @@
 :root {
 	--color: #333;
 }
-
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
   margin: 0;
+	padding: 0;
 	font-family: 'Red Hat Text', sans-serif;
 }
 
@@ -21,7 +26,6 @@ body {
 	background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
 	background-size: cover;
 	background-position: center;
-
 	background-attachment: fixed;
 }
 
@@ -32,12 +36,12 @@ h1 {
 
 p {
 	line-height: 24px;
-	padding: 16px;
+	padding: 12px;
 }
 
 a {
 	display: inline-block;
-	padding: 16px 56px;
+	padding: 16px 16px;
 	background-color: var(--color);
 	color: white;
 	text-decoration: none;
@@ -46,8 +50,25 @@ a {
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	font-size: 14px;
+	box-shadow: 2px 4px 16px rgb(0, 0, 0);
+}
+a:hover {
+	background-color: #7c7c7c;
+	transition: background-color 0.2s ease;
 }
 
+.pics {
+  background-color: transparent;
+  color: #333;
+  padding: 0;
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+	box-shadow: none;
+}
 .second {
 	background-image: url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
 	background-attachment: fixed;
@@ -82,7 +103,6 @@ h3 {
 	background-color: lightgrey;
 	background-size: cover;
 	background-position: center;
- 
 	margin-top: 10px;
 	border-radius: 0.3em;
 }
@@ -101,7 +121,7 @@ h3 {
 
 .second {
 	flex-direction: row;
-	gap: 26px;
+	gap: 22px;
 }
 
 .third {
@@ -136,6 +156,10 @@ h3 {
   margin-bottom: 20px;
   color: #333; /* Adjust to match your theme */
 }
+.advpara{
+	padding: 0px;
+}
+
 
 footer {
   background-color: #8d8d8d;

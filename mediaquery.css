@@ -1,0 +1,136 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container.second {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .item {
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .third h2 {
+    font-size: 48px;
+  }
+}
+
+/* Large devices (desktops, 992px - 1199px) */
+@media (max-width: 1199px) {
+  .container.second {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .item {
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .third h2 {
+    font-size: 36px;
+  }
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (max-width: 991px) {
+  .container.second {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .item {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .img {
+    height: 180px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .third {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .third .content {
+    width: 90%;
+  }
+
+  .third h2 {
+    font-size: 32px;
+  }
+}
+
+/* Small devices (phones, 576px - 767px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  a {
+    padding: 12px 36px;
+    font-size: 13px;
+  }
+
+  .item {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .third h2 {
+    font-size: 28px;
+  }
+
+  .third p {
+    font-size: 15px;
+  }
+
+  .img {
+    height: 160px;
+  }
+}
+
+/* Extra small devices (less than 576px) */
+@media (max-width: 575px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .third h2 {
+    font-size: 24px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  a {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .img {
+    height: 150px;
+  }
+}
